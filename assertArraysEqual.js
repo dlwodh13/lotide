@@ -1,3 +1,5 @@
+const eqArrays = require("./eqArrays.js");
+
 const assertArraysEqual = function(actual, expected) {
   //eqArrays included in eqArrays.js
   if (eqArrays(actual, expected)) {
@@ -6,3 +8,5 @@ const assertArraysEqual = function(actual, expected) {
     console.log(`🚫 Assertion Failed: ${actual} === ${expected}`);
   }
 };
+
+module.exports = assertArraysEqual;
