@@ -1,3 +1,3 @@
-const without = function(items, itemsToBeRemoved) {
-  return items.filter(element => !itemsToBeRemoved.includes(element));
+const without = function(source, itemsToRemove) {
+  return source.filter(element => !itemsToRemove.includes(element));
 };
