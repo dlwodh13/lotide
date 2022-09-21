@@ -6,7 +6,7 @@ const countLetters = function(str) {
   for(let char of str){
     let count = 0;
     for(let i = 0; i < str.length; i++){
-      if(char === str[i]){
+      if(char === str[i] && char !== ' '){
         count++;
       }
     }
