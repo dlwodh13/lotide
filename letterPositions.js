@@ -9,7 +9,6 @@ const letterPositions = function(sentence) {
 	for(let letter of sentence){
 		if(letter !== ' '){
 			letter in result ? result[letter].push(count) : result[letter] = [count];
-			//checking condition (if the left hand side within the )
 		}
 		count++;
 	}
