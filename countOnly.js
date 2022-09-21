@@ -1,10 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🚫 Assertion Failed: ${actual} === ${expected}`);
-  }
-};
+const assertEqual = require("./assertEqual.js");
 
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
@@ -16,7 +10,8 @@ const countOnly = function(allItems, itemsToCount) {
     let count = 0;
     if(itemsToCount[item] === true){
       allItems.forEach(function (element){
-        //console.log(element); -> outputs the elements in firstNames 
+        console.log(element); 
+        //-> outputs the elements in firstNames 
         if(element === item){
           count++;
         }
@@ -25,7 +20,7 @@ const countOnly = function(allItems, itemsToCount) {
     //if the count is greater than 0 -> store the count in result[item] 
     if(count){
       result[item] = count;
-      //console.log(result);
+      console.log(result);
       //it outputs -> {Jason: 1, Fang: 2}
     }
   }
