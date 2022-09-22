@@ -1,5 +1,3 @@
-const assertEqual = require("./assertEqual.js");
-
 const findKeyByValue = function(List, value) {
 	/* Object.keys(List); returns an array of a given object's own 
 	enumerable property names, iterated in the 
