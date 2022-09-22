@@ -4,7 +4,6 @@ const eqArrays = require("./eqArrays.js");
 const letterPositions = function(sentence) {
 	const result = {};
 	//logic to update results here
-	const tempArr = [];
 	let count = 0;
 	for(let letter of sentence){
 		if(letter !== ' '){
