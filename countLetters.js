@@ -1,5 +1,3 @@
-const assertEqual = require("./assertEqual.js");
-
 const countLetters = function(str) {
   const result = {};
   str = str.replace(/ /g, '');
@@ -16,5 +14,4 @@ const countLetters = function(str) {
   return result;
 };
 
-const expect = countLetters("lighthouse in the house");
-assertEqual(expect["h"],4);
+module.exports = countLetters;
