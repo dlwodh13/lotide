@@ -1,7 +1,5 @@
 const tail = function(arr) {
-  let tempArr = [];
-  for(i = 1; i < arr.length; i++){
-    tempArr.push(arr[i]);
-  }
-  return tempArr;
+  return (arr.slice(-1)[0]);
 };
+
+module.exports = tail;
